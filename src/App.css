@@ -1,0 +1,384 @@
+
+/* Area for styling Navigation BAR -> */
+
+.NavBar {
+  display: flex;
+  width: 100%;
+  height: 46px;
+  background-color: #353738;
+  background-size: 20px 20px;
+  
+}
+
+/* Area for styling Navigation BAR <- */
+
+@keyframes HomeStyleAnim {
+  from {color: #353738;}
+  to {color: white}
+}
+
+/* Area for styling Home Page -> */
+
+.HomeButtonStyle {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  text-align: center;
+  animation-name: HomeStyleAnim;
+  animation-duration: 6s;
+}
+
+.HomePageSyle {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  text-align: center;
+  background-image: url(./Assets/abstract.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.HomeDivStyle {
+  animation-name: HomeStyleAnim;
+  animation-duration: 6s;
+}
+
+.HomeContent {
+  margin-left: 2rem;
+  color: #353738;
+}
+
+.HomeBackround {
+  height: 46px;
+  flex-grow: 4;
+  margin-left: 20px;
+}
+
+.BigPicture {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+.Carousel {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
+  justify-content: center;
+}
+
+.HomeCarFirstImg {
+  width: 100%;
+  max-width: 500px;
+  max-height: 600px;
+}
+
+/* Area for styling Home Page <- */
+
+/* Area for styling Hobbies Page -> */
+
+.ProjectsButtonStyle {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  text-align: center;
+  animation-name: HomeStyleAnim;
+  animation-duration: 6s;
+}
+
+.ProjectPageStyle {
+  font-size: 25px;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  justify-content: right;
+}
+
+.ProjectsBackround {
+  height: 46px;
+  flex-grow: 1;
+}
+
+
+
+.HobbieNav {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+.SportsNav {
+  font-size: 40px;
+  background-image: url(./Assets/box2.jpg);
+  background-size: cover;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  border: black 3px solid;
+}
+
+.ItNav {
+  font-size: 40px;
+  background-image: url(./Assets/IT.jpeg);
+  background-size: cover;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  border: black 3px solid;
+}
+
+.MoviesNav {
+  font-size: 40px;
+  background-image: url(./Assets/movie2.jpg);
+  background-size: cover;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  border: black 3px solid;
+}
+
+.HobbieLinkStyle {
+  color: #ffffff;
+}
+
+
+
+/* Area for styling Hobbies Page <- */
+
+
+
+/* Area for styling Contact Page -> */
+
+.ContactsButtonStyle {
+  font-size: 25px;
+  color: white;
+  letter-spacing: 5px;
+  animation-name: HomeStyleAnim;
+  animation-duration: 6s;
+}
+
+
+.ContactPageStyle {
+background-image: url(./Assets/ContactImgBg.jpg);
+background-size: cover;
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+.ContactContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+}
+
+
+
+.BoxStyle {
+background-image: url(./Assets/signal.jpg);
+background-size: cover;
+width: 100%;
+height: 7%;
+position: absolute;
+bottom: 0;
+}
+
+.Hstyle {
+  text-align: center;
+  color: #dfdfdf;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ffffff 10%, rgb(54, 54, 54) 50%, #ffffff 60%);
+  background-size: auto auto;
+	background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 3s linear infinite;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.ContactInfo {
+  
+  margin-top: 150px;
+  position: relative;
+}
+
+.ContactInput {
+  margin-top: 150px;
+  
+  position: relative;
+}
+
+
+.ContactInfoBackground {
+
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  position: relative;
+}
+
+.ContactInfoBackground:hover {
+  -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+
+.ContactInputBackground {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  position: relative;
+}
+
+.ContactInputBackground:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.InfoTextStyle {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
+.ContactPstyle {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.TextInfoStyle {
+  position: absolute;
+  top: 1em;
+  left: 3em;
+
+}
+
+.TextInputStyle {
+  position: absolute;
+  top: 1em;
+  left: 3em;
+  font-size: 20px;
+}
+
+
+
+/* Area for styling Contact Page <- */
+
+
+
+
+/* Area for styling About page -> */
+
+.AboutButtonStyle {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+  text-align: center;
+  animation-name: HomeStyleAnim;
+  animation-duration: 6s;
+}
+
+.AboutPageStyle {
+  font-size: 25px;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  animation-name: HomeStyleAnim;
+  animation-duration: 6s;
+  justify-content: right;
+}
+
+.AboutContent {
+  display: flex;
+  width: 1900px;
+  height: 90rem;
+  background-color: green;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-left: 35px;
+}
+
+
+.AboutBackround {
+  height: 46px;
+  flex-grow: 1;
+}
+
+:any-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+:any-link:active {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+:any-link:visited {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+.FloatingDiv {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border: black solid 5px;
+  justify-content: center;
+  align-items: center;
+  animation-name: spin;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+.InvisibleDiv {
+  color: red;
+  background-color: yellow;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+/* Area for styling About page <- */
