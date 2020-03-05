@@ -1,13 +1,27 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 /* Area for styling Navigation BAR -> */
 
 .NavBar {
   display: flex;
   width: 100%;
-  height: 46px;
+  height: 60px;
   background-color: #353738;
   background-size: 20px 20px;
   
+}
+
+.container-fluid {
+  background-color: #353738;
 }
 
 /* Area for styling Navigation BAR <- */
@@ -33,10 +47,8 @@
   color: rgb(255, 255, 255);
   letter-spacing: 3px;
   text-align: center;
-  background-image: url(./Assets/abstract.jpg);
+  background-image: url(./Assets/doodle.jpg);
   background-size: cover;
-  width: 100%;
-  height: 100%;
   justify-content: center;
   position: relative;
   width: 100vw;
@@ -85,7 +97,7 @@
 
 /* Area for styling Hobbies Page -> */
 
-.ProjectsButtonStyle {
+.HobbiesButtonStyle {
   font-size: 25px;
   color: rgb(255, 255, 255);
   letter-spacing: 5px;
@@ -94,20 +106,31 @@
   animation-duration: 6s;
 }
 
-.ProjectPageStyle {
-  font-size: 25px;
+.HobbieMidBorder {
+  position: relative;
+  background-color: #353738;
+  height: 7vh;
+}
+
+.HobbieSelect {
+  padding-top: 5px;
+  display: flex;
+  font-size: 2vw;
   color: white;
-  letter-spacing: 3px;
-  text-align: center;
-  justify-content: right;
-}
-
-.ProjectsBackround {
-  height: 46px;
-  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 
+.HobbieBackground {
+  height: 100vh;
+  width: 100vw;
+}
+
+.HobbieBackImgStyle {
+  max-width: 100%;
+  
+}
 
 .HobbieNav {
   display: flex;
@@ -117,6 +140,8 @@
   justify-content: space-around;
   align-items: center;
   width: 100vw;
+  background-color: #353738;
+  padding-top: 30px;
 }
 
 .SportsNav {
@@ -126,7 +151,7 @@
   width: 33%;
   height: 100%;
   text-align: center;
-  border: black 3px solid;
+  
 }
 
 .ItNav {
@@ -136,23 +161,171 @@
   width: 33%;
   height: 100%;
   text-align: center;
-  border: black 3px solid;
+  
 }
 
 .MoviesNav {
   font-size: 40px;
-  background-image: url(./Assets/movie2.jpg);
+  background-image: url(./Assets/moviefilm.jpg);
   background-size: cover;
   width: 33%;
   height: 100%;
   text-align: center;
-  border: black 3px solid;
+  
 }
+
 
 .HobbieLinkStyle {
   color: #ffffff;
+
 }
 
+.SportsPageStyle {
+  position: relative;
+
+  
+}
+
+
+.SportsParStyle {
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #dfdfdf;
+  text-align: center;
+  background-image: url(./Assets/blackfade.jpg);
+  background-size: cover;
+}
+
+.BoxStoryPar {
+  font-size: 1vw;
+  background-image: url(./Assets/blackfade.jpg);
+  color: #dfdfdf;
+  padding: 10px 10px 10px;
+  margin-bottom: 0px;
+}
+
+.SportsStory {
+  display: flex;
+  width: 100%;
+}
+
+.FootballStoryPar {
+  font-size: 1vw;
+  background-image: url(./Assets/blackfade.jpg);
+  color: #dfdfdf;
+  padding: 10px 10px 10px;
+}
+
+.SportsPageStyle {
+  background-color: grey;
+
+}
+
+.ITPageStyle {
+ position: relative;
+}
+
+.ITPageStyle:hover {
+  -webkit-transition: grayscale(0);
+  transition: grayscale(0);
+}
+
+.ITMidBorder {
+  background-color: #353738;
+  height: 5vh;
+}
+
+.ITFloatingDiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  background-image: url(./Assets/chipset.jpg);
+  background-size: cover;
+  height: 75vh;
+}
+
+
+
+
+
+.ITElement1Img {
+  max-width: 100%;
+    max-height: 100%;
+}
+
+.element1 {
+  display: inline-block;
+  height: 21vh;
+  width: auto;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 100px;
+  margin-left: 5px;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  
+}
+
+.element2 {
+  display: inline-block;
+  height: 21vh;
+  width: auto;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 100px;
+  margin-left: 100px;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+ 
+}
+
+.element3 {
+  display: inline-block;
+  height: 21vh;
+  width: auto;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 100px;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(20deg, 20deg);
+  }
+  100% {
+    transform: skew(-20deg, -20deg);
+  }
+}
+
+
+
+
+/* .ITBorderImg {
+  background-image: url(./Assets/hexa3.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+} */
+
+.ITBorderImg:hover {
+  -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
 
 
 /* Area for styling Hobbies Page <- */
@@ -238,10 +411,13 @@ bottom: 0;
   height: auto;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
   position: relative;
 }
+
 
 .ContactInfoBackground:hover {
   -webkit-filter: grayscale(0);
@@ -266,18 +442,20 @@ bottom: 0;
 }
 
 .InfoTextStyle {
-  font-size: 25px;
+  font-size: 2vw;
   color: rgb(0, 0, 0);
   font-weight: bolder;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-top: 10px;
 }
 
 
 
 .ContactPstyle {
-  font-size: 30px;
+  font-size: 1vw;
   padding-top: 10px;
+  color: #dfdfdf;
+  text-overflow: ellipsis;
 }
 
 .TextInfoStyle {
@@ -291,10 +469,12 @@ bottom: 0;
   position: absolute;
   top: 1em;
   left: 3em;
-  font-size: 20px;
+  font-size: 1vw;
 }
 
-
+.InputParagraphStyle {
+  font-weight: bold;
+}
 
 /* Area for styling Contact Page <- */
 
@@ -313,30 +493,93 @@ bottom: 0;
 }
 
 .AboutPageStyle {
-  font-size: 25px;
-  color: white;
-  letter-spacing: 3px;
+  position: relative;
+  width: 100vw;
+}
+
+
+.AboutTopStyle {
   text-align: center;
-  animation-name: HomeStyleAnim;
-  animation-duration: 6s;
-  justify-content: right;
+  width: 100vw;
+  background-image: url(./Assets/matrix.jpg);
+  background-size: cover;
+  height: 13vh;
+  border-top: 15px black solid;
+  border-bottom: 15px black solid;
 }
 
-.AboutContent {
+.AboutH1Style {
+font-size: 3vw;
+color: #dfdfdf;
+
+}
+
+.AboutContainer {
+  background-image: url(./Assets/matrix.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.AboutPopUp1 {
   display: flex;
-  width: 1900px;
-  height: 90rem;
-  background-color: green;
-  box-sizing: border-box;
-  padding-top: 35px;
-  padding-left: 35px;
+  border: black 10px solid;
+  justify-content: center;
+
 }
 
 
-.AboutBackround {
-  height: 46px;
-  flex-grow: 1;
+.AboutPopUpStyle1 {
+  color: #000000;
+  font-size: 2vw;
+  background-image: url(./Assets/simple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
 }
+
+.ModalButtonStyle {
+  color: #000000;
+  font-size: 2vw;
+  background-image: url(./Assets/simple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15vw;
+}
+
+.AboutPopUpStyle2 {
+  color: #000000;
+  font-size: 2vw;
+  background-image: url(./Assets/simple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+
+}
+
+.HtmlStyle {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.AboutComponentButton {
+  background-image: url(./Assets/simple.jpg);
+  background-size: cover;
+  width: 24vw;
+  height: 3vh;
+  margin: 23px 23px 23px; 
+  border: 2px black solid;
+}
+
+.AboutComponentsH1 {
+  font-size: 1vw;
+  color: #dfdfdf;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 :any-link:hover {
   color: rgb(0, 0, 0);
@@ -353,32 +596,6 @@ bottom: 0;
   text-decoration: none;
 }
 
-.FloatingDiv {
-  display: flex;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border: black solid 5px;
-  justify-content: center;
-  align-items: center;
-  animation-name: spin;
-  animation-duration: 100s;
-  animation-iteration-count: infinite;
-  border-radius: 50%;
-}
-
-.InvisibleDiv {
-  color: red;
-  background-color: yellow;
-  width: 290px;
-  height: 290px;
-  border-radius: 50%;
-  text-align: center;
-}
-
-@keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
 
 /* Area for styling About page <- */
+

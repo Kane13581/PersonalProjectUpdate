@@ -9,15 +9,16 @@ import './App.css';
 
 import Home from './Components/Home';
 import About from './Components/About';
-import Projects from "./Components/Projects";
 import Contacts from "./Components/contacts";
+import Hobbies from "./Components/Hobbies";
+
 
 
 export default function App() {
   return (
     <Router>
       <div class="container-fluid">
-        <div class="row bg-dark">
+        <div class="row ">
 
           <div class="col-sm-6 col-lg-6">
             <Link to="/" className="HomeButtonStyle" >Home</Link>
@@ -28,7 +29,7 @@ export default function App() {
           </div>
 
           <div class="col-sm-2 col-lg-2">
-            <Link to="/projects" className="ProjectsButtonStyle">Hobbies</Link>
+            <Link to="/Hobbies" className="HobbiesButtonStyle">Hobbies</Link>
           </div>
 
           <div class="col-sm-2 col-lg-2">
@@ -47,8 +48,8 @@ export default function App() {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/projects">
-              <Projects />
+            <Route path="/hobbies">
+              <Hobbies />
             </Route>
             <Route path="/contacts">
               <Contacts />
